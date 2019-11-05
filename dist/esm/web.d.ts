@@ -1,6 +1,6 @@
 import { WebPlugin } from '@capacitor/core';
-import { VistablePlugin } from './definitions';
-export declare class VistablePluginWeb extends WebPlugin implements VistablePlugin {
+import { VistablePluginPlugin } from './definitions';
+export declare class VistablePluginWeb extends WebPlugin implements VistablePluginPlugin {
     constructor();
     echo(options: {
         value: string;

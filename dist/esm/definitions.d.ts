@@ -1,9 +1,9 @@
 declare module "@capacitor/core" {
     interface PluginRegistry {
-        VistablePlugin: VistablePlugin;
+        VistablePlugin: VistablePluginPlugin;
     }
 }
-export interface VistablePlugin {
+export interface VistablePluginPlugin {
     echo(options: any): Promise<any>;
     initManager(options: any): Promise<any>;
     turnOn(options: any): Promise<any>;

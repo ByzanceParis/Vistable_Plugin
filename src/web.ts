@@ -1,7 +1,7 @@
 import { WebPlugin } from '@capacitor/core';
-import { VistablePlugin } from './definitions';
+import { VistablePluginPlugin } from './definitions';
 
-export class VistablePluginWeb extends WebPlugin implements VistablePlugin {
+export class VistablePluginWeb extends WebPlugin implements VistablePluginPlugin {
   constructor() {
     super({
       name: 'VistablePlugin',
