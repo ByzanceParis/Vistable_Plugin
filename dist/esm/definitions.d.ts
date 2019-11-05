@@ -1,29 +1,11 @@
 declare module "@capacitor/core" {
     interface PluginRegistry {
-        VistablePlugin: VistablePluginPlugin;
+        VistablePlugin: VistablePlugin;
     }
 }
-export interface VistablePluginPlugin {
-    echo(options: {
-        value: string;
-    }): Promise<{
-        value: string;
-    }>;
-    initManager(options: {
-        apikey: string;
-        name: string;
-        connector: string;
-    }): Promise<{
-        value: string;
-    }>;
-    turnOn(options: {
-        win: String;
-        second: String;
-        third: String;
-    }): Promise<{
-        value: string;
-    }>;
-    turnOff(): Promise<{
-        value: string;
-    }>;
+export interface VistablePlugin {
+    echo(options: any): Promise<any>;
+    initManager(options: any): Promise<any>;
+    turnOn(options: any): Promise<any>;
+    turnOff(): Promise<any>;
 }

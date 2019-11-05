@@ -1,16 +1,11 @@
-// declare module "@capacitor/core" {
-//   interface PluginRegistry {
-//     VistablePlugin: VistablePlugin;
-//   }
-// }
+declare module "@capacitor/core" {
+  interface PluginRegistry {
+    VistablePlugin: VistablePluginPlugin;
 
-declare global {
-  interface VistablePlugin {
-    VistablePlugin?: VistablePlugin;
   }
 }
 
-export interface VistablePlugin {
+export interface VistablePluginPlugin {
 
   echo(options: any): Promise<any>;
 
